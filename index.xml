@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>https://xiaoxiao-ning.github.io/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Mar 2021 22:16:32 +0800</lastBuildDate><atom:link href="https://xiaoxiao-ning.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SpringBoot单元测试</title>
+      <link>https://xiaoxiao-ning.github.io/post/blog/</link>
+      <pubDate>Thu, 18 Mar 2021 22:16:32 +0800</pubDate>
+      
+      <guid>https://xiaoxiao-ning.github.io/post/blog/</guid>
+      <description>SpringBoot单元测试注解 1.加载配置 首先你需要导入相关依赖,使用SpringBoot starter创建的已经自动创建的
+&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;spring-boot-starter-test&amp;lt;/artifactId&amp;gt; &amp;lt;scope&amp;gt;test&amp;lt;/scope&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;junit&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;junit&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;4.12&amp;lt;/version&amp;gt; &amp;lt;scope&amp;gt;test&amp;lt;/scope&amp;gt; &amp;lt;/dependency&amp;gt; 2.在test包下，使用相关注解 首先你创建单元测试类的时候，应当创建在这个test目录下
+![](/Users/xiaoxiaoning/Documents/截屏2021-03-17 下午9.25.26.png)
+其次，在使用的时候，应当加入以下注解
+@RunWith(SpringRunner.class)//底层使用了Junit 继承了SpringJUnit4ClassRunner 这个类 @SpringBootTest(classes={BootWebDemo01Application.class}) 在具体的类中使用的时候一般有三个注解
+@Before @Test @After 这三个注解具体用法用到了AOP的概念,具体等到后期学习到了再来补充</description>
+    </item>
+    
+  </channel>
+</rss>
